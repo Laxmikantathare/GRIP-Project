@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+    </style>
+    <title>Transfer</title>
+  </head>
+  <body>
+    <div class="header">
+        <div class="name">Sparks Bank</div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="#">customers</a>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+        <h1>Laxmikant athare</h1>
+      <h2>Balance - $ 5,00,000</h2>
+      <h3>Select one customers from below by clicking on name in below table</h3>
+      <div id="vis" style="visibility:hidden">
+        <div class=" setstyle">Name:<input type="text" name="fname" id="fname" /></div> 
+        <div class=" setstyle">Email:<input type="email" name="lname" id="lname" /></div>
+        <div class="setstyle">Amount:<input type="number" name="age" id="age" /></div>
+      </div>
+      
+      <button id="vis1"  onclick="editRow(); makealert();">Send Money</button><br /><br />
+      
+    </div>
+
+    <div class="container2">
+      <table id="table" onclick="visi()">
+        <tr id="viscont" onclick="visi() "  >
+          <th>Name</th >
+          <th>email</th>
+          <th>Balance</th>
+        </tr>
+        <tr  >
+          <td>Abhishek Bhagwat</td>
+          <td>abhi123@gmail.com</td>
+          <td id="vighneshbal">40000</td>
+        </tr>
+        <tr onclick="visi()" >
+          <td>pai bhagwat</td>
+          <td>powerfulneta001@gmail.com</td>
+          <td>50000</td>
+        </tr>
+        <tr onclick="visi()" >
+          <td>Kunal Narawade</td>
+          <td>kunalnarwade2@gmail.com</td>
+          <td>3000</td>
+        </tr>
+        <tr onclick="visi()" >
+          <td>Akshay Chobhe</td>
+          <td>Akshaychobhe@gmail.com</td>
+          <td>70000</td>
+        </tr>
+        <tr onclick="visi()" >
+          <td>rushikesh Kale</td>
+          <td>rushi1234@gmail.com</td>
+          <td>1000</td>
+        </tr>
+        <tr onclick="visi()" >
+          <td>Kundan Lawande</td>
+          <td>kundanlawande@gmail.com</td>
+          <td>300000</td>
+        </tr>
+        <tr onclick="visi()" >
+          <td>abhi bhagwat</td>
+          <td>adhyakshabhagwat@gmail.com</td>
+          <td>90000</td>
+        </tr>
+        <tr onclick="visi()" >
+          <td>Ganesh Ghadge</td>
+          <td>Ganesh001@gmail.com</td>
+          <td>20000</td>
+        </tr>
+        <tr onclick="visi()" >
+          <td>Shreyas Pujari</td>
+          <td>Shreyas123@gmail.com</td>
+          <td>10000</td>
+        </tr>
+        <tr onclick="visi()" >
+          <td>Shantanu Lawande</td>
+          <td>Shantanu678@gmail.com</td>
+          <td>100</td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer2">
+      <p>Copyright 2022 &copy; Laxmikant Athare #GRIPSEPT22</p>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
